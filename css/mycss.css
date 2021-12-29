@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+    main {
+    flex: 1 0 auto;
+    }
+body {
+    background: #fff;
+  }
+  .pad{
+      padding-top: 40px !important;
+  }
+.pad2{
+    padding-bottom: 40px !important;
+}
+
+  .bttn{
+    background-color: white!important;
+    color: black !important;
+  }
+  .btnn:hover{
+      background-color: black !important;
+      color: white !important;
+  }
+
+
+#modal1, #modal2{
+    border-radius: 25px !important;
+}
+
+
+.brderR{
+  border-radius: 25px !important;
+}
+
+.dDivider{
+  height: 2px !important;
+  background-color: black!important;
+}
+

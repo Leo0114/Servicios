@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>Generar Solicitud</title>
+  <link rel="icon" href="img/uwu.png" />
+  <link rel="stylesheet" href="css/materialize.css" />
+  <link rel="stylesheet" href="css/mycss.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/myjs.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/materialize-social.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+</head>
+
+<body>
+  <!--       Dropdown sht -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li>
+      <a href="Estatusreq.html" class="black-text">Estatus de solicitudes</a>
+    </li>
+    <li>
+      <a href="Gensolicitud.html" class="black-text">Generar Solicitud</a>
+    </li>
+    <li>
+      <a href="autorizacion.html" class="black-text">Autorización de solicitudes</a>
+    </li>
+
+    <li><a href="index.html" class="black-text">inicio</a></li>
+  </ul>
+
+  <!--   Navbar starts-->
+  <nav class="nav-extended white">
+    <div class="nav-wrapper container">
+      <a href="Estatusreq.html" class="black-text brand-logo center"><img class="responsive-img" width="50" height="30"
+          src="img/uwu.png" />
+        Solicitudes
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Solicitudes<i
+              class="material-icons right">arrow_drop_down</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--     SideNav -->
+  <ul class="sidenav black-text" id="mobile-demo">
+    <li>
+      <div class="user-view center">
+        <a href="index.html"><img class="responsive-img" width="80" height="40" src="img/uwu.png" />
+        </a>
+      </div>
+    </li>
+
+    <li class="active">
+      <a href="Clientes.html" class="black-text"><i class="material-icons">contacts</i>Clientes</a>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li>
+      <a href="Estatusreq.html" class="black-text"><i class="material-icons">schedule</i>Estatus de solicitudes</a>
+    </li>
+
+    <li>
+      <a href="Gensolicitud.html" class="black-text"><i class="material-icons">assignment</i>Generar Solicitud</a>
+    </li>
+    <li>
+      <a href="autorizacion.html" class="black-text"><i class="material-icons">verified_user </i>Autorización de
+        solicitudes</a>
+    </li>
+  </ul>
+
+  <!-- Titulo -->
+  <div class="container center pad">
+    <h3>Clientes</h3>
+  </div>
+  <div class="divider container dDivider"></div>
+
+  <!-- buttoon agregar -->
+  <div class="container center pad">
+    <a class="btnn waves-effect waves-light btn-large hoverable modal-trigger" href="#modal2"><i
+        class="material-icons left">person</i>Agregar Cliente</a>
+  </div>
+
+  <!-- Buscador de clientes -->
+  <div class="container pad">
+    <label>Buscar nombre de cliente </label>
+  </div>
+  <div class="container center">
+    <nav>
+      <div class="nav-wrapper white">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required />
+            <label class="label-icon" for="search">
+              <i class="material-icons black-text">search</i>
+            </label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- talba final -->
+  <div class="container pad pad2">
+    <table class="responsive-table centered highlight">
+      <thead>
+        <tr>
+          <th>Num</th>
+          <th>Cliente</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Dr. Gusavo Azaleas</td>
+
+          <td>
+            <a class="waves-effect waves-black btn-flat modal-trigger" href="#modal1">Ver</a>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Walmart</td>
+
+          <td>
+            <a class="waves-effect waves-black btn-flat modal-trigger" href="#modal1">Ver</a>
+          </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Similares</td>
+          <td>
+            <a class="waves-effect waves-black btn-flat modal-trigger" href="#modal1">Ver</a>
+          </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Seguros FF</td>
+          <td>
+            <a class="waves-effect waves-black btn-flat modal-trigger" href="#modal1">Ver</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal pad2">
+    <div class="modal-content bradius">
+      <h2 class="center">Detalles de Solicitud</h2>
+    </div>
+    <div class="container center row">
+      <div class="col l8">
+        <h6 class="center">ORDEN NUMERO 002</h6>
+      </div>
+      <div class="col l4">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Seleccionar todo</span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <table class="responsive-table centered highlight">
+        <thead>
+          <tr>
+            <th>CLAVE</th>
+            <th>Materiales</th>
+            <th>Cantidad</th>
+            <th>Seleccion</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>CVE14</td>
+            <td>BAÑO MARIA PARA TERMOPLASTICOS. PARA RADIOTERAPIA</td>
+            <td>20</td>
+            <td>
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>CVE14</td>
+            <td>ACEITE LUBRICANTE PARA ADITAMENTOS ANGULADOS</td>
+            <td>50</td>
+            <td>
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>CVE14</td>
+            <td>ADAPTADOR CO2 MAINSTREAM ADULTO/PEDIATRICO</td>
+            <td>100</td>
+            <td>
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>CVE14</td>
+            <td>JUEGO DE ADAPTADORES GRABBER (14) AHA. PRESENTACION:</td>
+            <td>300</td>
+            <td>
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-close waves-effect waves-green btn-flat">Autorizar</a>
+    </div>
+  </div>
+
+  <!--     Modal de agregar clientes-->
+  <div id="modal2" class="modal pad2">
+    <div class="modal-content bradius"></div>
+    <div class="row container">
+      <div class="col s4 m4 l4 ">
+        <form action="#">
+          <div class="file-field input-field"">
+            <img
+              class=" responsive-img hoverable brderR" width="240" src="img/profile.png" />
+          <input type="file">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+
+  </div>
+  <div class="divider  dDivider "></div>
+
+  <div class="pad">
+    <h6 class="container pad">Estudios Realizados </h6>
+
+
+<!-- Card -->
+<div class="row container pad">
+  <div class="col s12 m6 l4 ">
+    <div class="card ">
+      <div class="card-image">
+        <img src="img/file.png">
+      </div>
+      <div class="card-action">
+        <a href="#"  target="_blank">Studio X</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l4">
+    <div class="card">
+      <div class="card-image">
+        <img src="img/file.png">
+      </div>
+      <div class="card-action">
+        <a href="#"  target="_blank">Studio X</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m12 l4">
+    <div class="card">
+      <div class="card-image">
+        <img src="img/file.png">
+      </div>
+      <div class="card-action">
+        <a href="#"  target="_blank">Studio X</a>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+
+
+  <script>
+    var dropy;
+    dropy = {
+      coverTrigger: false,
+    };
+
+    $(".dropdown-trigger").dropdown(dropy);
+
+
+
+  </script>
+
+</body>
+
+</html>

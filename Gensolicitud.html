@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Generar Solicitud</title>
+    <link rel="icon" href="img/uwu.png" />
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/mycss.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/myjs.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/materialize-social.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+  </head>
+  <body>
+    <!--       Dropdown sht -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li>
+        <a href="Estatusreq.html" class="black-text">Estatus de solicitudes</a>
+      </li>
+      <li>
+        <a href="autorizacion.html" class="black-text"
+          >Autorización de solicitudes</a
+        >
+      </li>
+
+      <li><a href="index.html" class="black-text">inicio</a></li>
+    </ul>
+
+    <!--   Navbar starts-->
+    <nav class="nav-extended white">
+      <div class="nav-wrapper container">
+      
+        <a href="Gensolicitud.html" class="  black-text   brand-logo center"
+          ><img
+            class="responsive-img "
+            width="50"
+            height="30"
+            src="img/uwu.png"
+            
+          />
+          Solicitudes
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="Clientes.html" class="black-text">Clientes</a></li>
+
+          <li>
+            <a
+              class="dropdown-trigger black-text"
+              href="#!"
+              data-target="dropdown1"
+              >Solicitudes<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--     SideNav -->
+    <ul class="sidenav black-text" id="mobile-demo">
+      <li>
+        <div class="user-view center">
+          <a href="index.html"
+            ><img
+              class="responsive-img"
+              width="80"
+              height="40"
+              src="img/uwu.png"
+            />
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <a href="Clientes.html" class="black-text"
+          ><i class="material-icons">contacts</i>Clientes</a
+        >
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a href="Estatusreq.html" class="black-text"
+          ><i class="material-icons">schedule</i>Estatus de solicitudes</a
+        >
+      </li>
+      <li class="active">
+        <a href="Gensolicitud.html" class="black-text"
+          ><i class="material-icons">assignment</i>Generar Solicitud</a
+        >
+      </li>
+      <li>
+        <a href="autorizacion.html" class="black-text"
+          ><i class="material-icons">verified_user </i>Autorización de
+          solicitudes</a
+        >
+      </li>
+    </ul>
+    
+<!--     Titulo -->
+    <div class="container center pad">
+      <h3>Generar Solicitud</h3>
+    </div>
+    <div class="divider container dDivider"></div>
+
+    <!-- Select 1st row -->
+    <div class="container row pad">
+      <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>CVE_CBI</label>
+      </div>
+
+      <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>CVE14</label>
+      </div>
+    </div>
+    <!-- Select 2nd row -->
+    <div class="container row pad">
+      <div class="col l2">
+        <select>
+          <option value="" disabled selected>GPO</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="col l2">
+        <select>
+          <option value="" disabled selected>GEN</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="col l4">
+        <select>
+          <option value="" disabled selected>ESP</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="col l2">
+        <select>
+          <option value="" disabled selected>DIF</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="col l2">
+        <select>
+          <option value="" disabled selected>VAR</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Select 3rd row -->
+    <div class="container row pad">
+      <div class="col l10 s12">
+        <select>
+          <option value="" disabled selected>
+            BIOQUIMICA CLINICA. MARCA: ABBOTT. MODELO: ARCHITECT CI8200.
+          </option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+      <div class="col l2 s12">
+        <a class="btnn waves-effect waves-light btn-large hoverable"
+          >Seleccionar</a
+        >
+      </div>
+    </div>
+
+    <!-- Table section -->
+    <div class="container pad">
+      <table class="responsive-table centered highlight">
+        <thead>
+          <tr>
+            <th>CLAVE</th>
+            <th>Materiales</th>
+            <th>Cantidad</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>CVE14</td>
+            <td>BAÑO MARIA PARA TERMOPLASTICOS. PARA RADIOTERAPIA</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>CVE14</td>
+            <td>ACEITE LUBRICANTE PARA ADITAMENTOS ANGULADOS</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>CVE14</td>
+            <td>ADAPTADOR CO2 MAINSTREAM ADULTO/PEDIATRICO</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>CVE14</td>
+            <td>JUEGO DE ADAPTADORES GRABBER (14) AHA. PRESENTACION:</td>
+            <td>300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- enviar solicitud -->
+    <div class="container center pad pad2">
+      <a
+        onclick="M.toast({html: 'Solicitud enviada', classes: 'rounded'});"
+        class="btnn waves-effect waves-light btn-large hoverable"
+        ><i class="material-icons left">check</i>Enviar Solicitud</a
+      >
+    </div>
+
+    <script>
+      var dropy;
+      dropy = {
+        coverTrigger: false,
+      };
+
+      $(".dropdown-trigger").dropdown(dropy);
+    </script>
+  </body>
+</html>
