@@ -19,7 +19,6 @@ $nr = mysqli_num_rows($query);
 
 if($nr == 1)
 {
-
     header('location: Gensolicitud.html');
 }
 else if ($nr == 0) 
