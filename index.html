@@ -31,30 +31,34 @@
     </div>
     <!-- Formulario -->
  
+    <form action="login.php" method="post">
+
       <div class="container center-align">
         <div class="row ">
          
             <div class="input-field col s12 m12 l12">
-              <input id="email" type="email" class="validate ">
-              <label for="email" >Email</label>
-              <span class="helper-text" data-error="Invalid email" data-success="right"></span>
+              <input id="email" type="text" class="validate" name="usser"required>
+              <label for="email" >Usuario</label>
+              <span class="helper-text" data-error="Invalid username" data-success="right"></span>
             </div>
       
           
         </div>
         <div class="row">
           <div class="input-field col s12 m12 l12">
-            <input id="password" type="password" class="validate ">
+            <input id="password" type="password" class="validate " name="pass" required>
             <label for="password">Password</label>
             <span class="helper-text" data-error="Wrong password" data-success="right"></span>
           </div>
         </div>
 
 
-
-        <a href="Gensolicitud.html" class="btnn waves-effect waves-light btn-large hoverable "><i class=" material-icons left ">account_box</i>Entrar</a>
+        <button class="btnn waves-effect waves-light btn-large hoverable " type="submit"><i class=" material-icons left ">account_box</i>Entrar</button>
 
       </div>
+
+    </form>
+    
 
     
 
